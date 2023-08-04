@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calory Tracker';
-  totalCalories :number;
-  receiveTotalCalories($event){
+  totalCalories :number | undefined;
+  receiveTotalCalories($event: number | undefined){
     this.totalCalories = $event;
 
   }
