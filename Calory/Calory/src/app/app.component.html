@@ -1,0 +1,4 @@
+<app-header></app-header>
+<app-today [totalCalories]="totalCalories"></app-today>
+<app-new-food (totalCaloriesEvent)="receiveTotalCalories($event)"></app-new-food>
+<router-outlet></router-outlet>
